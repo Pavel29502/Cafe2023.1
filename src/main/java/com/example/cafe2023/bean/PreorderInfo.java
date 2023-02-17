@@ -6,6 +6,7 @@ import java.util.Objects;
     @Entity
     @Table(name = "Preorder_info")
     public class PreorderInfo {
+
         @Id
         @GeneratedValue(strategy = GenerationType.IDENTITY)
         @Column(name = "id")
