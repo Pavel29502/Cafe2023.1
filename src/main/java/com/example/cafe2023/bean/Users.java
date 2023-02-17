@@ -6,7 +6,6 @@ import java.util.Objects;
     @Entity
     @Table(name = "Users")
     public class Users {
-
         @Id
         @GeneratedValue(strategy = GenerationType.IDENTITY)
         @Column(name = "id")
@@ -30,18 +29,6 @@ import java.util.Objects;
         @Column(name = "ban")
         private boolean ban;
 
-        public Users(long id, List<Preorder> preorderr, List<Review> newReview, String name, String login, String pass, String email, String role, long points, boolean ban) {
-            this.id = id;
-            this.preorderr = preorderr;
-            this.newReview = newReview;
-            this.name = name;
-            this.login = login;
-            this.pass = pass;
-            this.email = email;
-            this.role = role;
-            this.points = points;
-            this.ban = ban;
-        }
 
         public Users() {
         }
